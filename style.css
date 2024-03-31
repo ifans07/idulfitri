@@ -157,7 +157,7 @@ section::before{
 	.count{
 /*		margin-bottom: 40px;*/
 		gap: 2.2rem;
-		width: 90%;
+		width: 80%;
 		margin: 0 auto 40px auto;
 	}
 	.count div{
