@@ -22,7 +22,7 @@ let x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  day.innerHTML = days
+  day.innerHTML = (days<10)?'0'+days:days
   hour.innerHTML = (hours<10)?'0'+hours:hours
   minute.innerHTML = (minutes<10)?'0'+minutes:minutes
   second.innerHTML = (seconds<10)?'0'+seconds:seconds
