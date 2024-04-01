@@ -103,6 +103,7 @@ section::before{
   	text-transform: uppercase;
   	letter-spacing: -1.5px;
   	padding-bottom: 10px;
+  	text-align: center;
 }
 .container p{
 	text-align: center;
