@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<div class="header-takbir">
-				<span class="autoplay"><div id="efek"></div><i class="fa-solid fa-play"></i></span>
+				<span class="autoplay bounce"><div id="efek"></div><i class="fa-solid fa-play"></i></span>
 				<audio loop id="autoplay">
 				  <source src="takbiran/takbiran.mp3" type="audio/mpeg">
 				  Your browser does not support the audio tag.
@@ -99,11 +99,13 @@
 					iconP.classList.remove('fa-pause')
 					iconP.classList.add('fa-play')
 					efek.classList.remove('efek')
+					btnAutoplay.classList.add('bounce')
 				}else{
 					playTakbiran.play()
 					iconP.classList.remove('fa-play')
 					iconP.classList.add('fa-pause')
 					efek.classList.add('efek')
+					btnAutoplay.classList.remove('bounce')
 				}
 			}
 		}
@@ -113,11 +115,13 @@
 				iconP.classList.remove('fa-pause')
 				iconP.classList.add('fa-play')
 				efek.classList.remove('efek')
+				btnAutoplay.classList.add('bounce')
 			}else{
 				playTakbiran.play()
 				iconP.classList.remove('fa-play')
 				iconP.classList.add('fa-pause')
 				efek.classList.add('efek')
+				btnAutoplay.classList.remove('bounce')
 			}
 		})
 		console.log(playTakbiran)
@@ -150,9 +154,12 @@
 	</script>
 	<script>
 	    var typed = new Typed('#app', {
-	      strings: ['Saya Ifans dan keluarga mengucapkan','Selamat hari raya idul fitri','Minal \'\Aidin wal-Faizin', 'Mohon Maaf Lahir dan Batin🤝🙏😁'],
+	      strings: ['Saya Ifans dan keluarga mengucapkan','Selamat hari raya idul fitri 1445H','Minal \'\Aidin wal-Faizin', 'Mohon Maaf Lahir dan Batin🤝🙏😁'],
 	      typeSpeed: 50,
-	      loop: true
+	      loop: true,
+	      loopCount: 3,
+	      backDelay: 1000,
+	      fadeOutDelay: 1000
 	    });
 	</script>
 </body>

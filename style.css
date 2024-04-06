@@ -262,6 +262,23 @@ header .header-left{
 	border-radius: 50%;
 	cursor: pointer;
 }
+.bounce{
+	animation: bounce 3s linear infinite;
+}
+@keyframes bounce{
+	20%,50%,80%,to{
+		transform: translateY(0);
+	}
+	40%{
+		transform: translateY(-30px);
+	}
+	70%{
+		transform: translateY(-15px);
+	}
+	90%{
+		transform: translateY(-4px);
+	}
+}
 
 .efek{
 	position: absolute;
